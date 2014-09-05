@@ -1,0 +1,108 @@
+@import "compass/css3/border-radius";
+
+.content-center {
+	@extend .row;
+	box-shadow: 3px 3px $primary-dark;
+}
+
+.lotus {
+	background-image: url("../img/lotus-bottom.png");
+	background-size: contain;
+	height: 4em;
+	background-position-x: 4em;
+}
+
+header {
+	margin: 2em auto;
+	text-align: center;
+	background: $light $main-texture;
+
+	h1 {
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+		.header1 {
+			color: $primary-dark;
+		}
+		.header2 {
+			color: $accent;
+		}
+	}
+}
+
+nav {
+	@extend .content-center;
+	@include border-top-radius(1em);
+
+	background: $dark;// $main-texture;
+	color: $light;
+	margin-bottom: 0;
+
+	.tabs {
+		li {
+			@extend .small-4;
+			@extend .columns;
+			a {
+				color: $light;
+			}
+		}
+	}
+}
+
+main {
+	@extend .content-center;
+
+	background: $light $main-texture;
+	padding: 1em 5em;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $accent;
+		border-bottom: 3px dotted $primary-dark;
+		max-width: 35%;
+	}
+
+	aside {
+		p {
+			margin-bottom: 0.25em;
+		}
+
+		margin-bottom: 1em;
+	}
+
+	.social {
+		@extend .small-12;
+		@extend .large-3;
+		@extend .large-centered;
+		@extend .columns;
+	}
+
+	blockquote {
+		font-size: 1.25em;
+		padding: 2em 1.25em 1em;
+		font-style: italic;
+
+		.author {
+			display: block;
+			text-align: right;
+			font-style: normal;
+			color: $dark;
+			font-size: 0.75em;
+		}
+	}
+}
+
+footer {
+	@extend .content-center;
+	@extend .text-right;
+	@include border-bottom-radius(1em);
+
+	background: $dark;// $main-texture;
+	color: $light;
+	margin-bottom: 3em !important;
+	padding: 0.75em 0;
+
+	span.copyright {
+		font-family: $sans-serif;
+		margin-right: 1em;
+	}
+}
