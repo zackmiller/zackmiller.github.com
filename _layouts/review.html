@@ -1,0 +1,13 @@
+---
+layout: base
+---
+<div class="review content row">
+	<div class="small-12 columns">
+		<h3 class="review-title">{{ page.title }}</h3>
+		{% for i in (1..page.stars) %}
+			<i class="fa fa-star"></i>
+		{% endfor %}
+		<span>{{ page.excerpt | markdownify }}</span>
+		{{ page.content | markdownify }}
+	</div>
+</div>

@@ -1,108 +1,139 @@
 @import "compass/css3/border-radius";
 
-.content-center {
+body {
 	@extend .row;
-	box-shadow: 3px 3px $primary-dark;
-}
-
-.lotus {
-	background-image: url("../img/lotus-bottom.png");
-	background-size: contain;
-	height: 4em;
-	background-position-x: 4em;
 }
 
 header {
-	margin: 2em auto;
-	text-align: center;
-	background: $light $main-texture;
+	@extend .row;
+	@extend .text-center;
+
+	.attribution {
+		position: absolute;
+		top: 0.25em;
+		right: 0.25em;
+		text-align: right;
+		font-size: 0.9em;
+		line-height: 1;
+		max-width: 25%;
+
+		.title {
+			font-family: $accent-font;
+			display: block;
+		}
+		.artist {
+			font-family: $sans-serif;
+			font-size: 0.8em;
+			font-weight: 100;
+		}
+
+	}
+
+	.pill {
+		@include border-radius(2.5em);
+		border: 0.2em solid $dark;
+		background: $light;
+		position: relative;
+
+		@media #{$small-only} {
+			margin: -2.5em auto 0.25em;
+		}
+		margin: -6.5em auto 0.25em;
+
+		width: 80%;
+		max-width: 30em;
+		padding: 0.45em;
+	}
 
 	h1 {
-		padding-top: 1em;
-		padding-bottom: 1em;
-
-		.header1 {
-			color: $primary-dark;
-		}
-		.header2 {
-			color: $accent;
-		}
+		letter-spacing: 0.45em;
+		margin-right: -0.45em;
+		font-family: $accent-font;
 	}
-}
 
-nav {
-	@extend .content-center;
-	@include border-top-radius(1em);
+	h2 {
+		font-size: 1.1em;
+	}
 
-	background: $dark;// $main-texture;
-	color: $light;
-	margin-bottom: 0;
-
-	.tabs {
-		li {
-			@extend .small-4;
-			@extend .columns;
-			a {
-				color: $light;
-			}
-		}
+	a {
+		color: $dark;
 	}
 }
 
 main {
-	@extend .content-center;
+	@extend .row;
+	padding: 0.8em;
 
-	background: $light $main-texture;
-	padding: 1em 5em;
+	section {
+		@extend .small-12;
+		@extend .columns;
 
-	h1, h2, h3, h4, h5, h6 {
-		color: $accent;
-		border-bottom: 3px dotted $primary-dark;
-		max-width: 35%;
+		p:last-child {
+			margin-bottom: 1em;
+		}
 	}
+	
+	.grid {
+		@extend .large-6;
+		@extend .columns;
 
-	aside {
-		p {
-			margin-bottom: 0.25em;
+		margin-bottom: 1.5em;
+
+		.grid-title {
+			@extend .small-10;
+			@extend .columns;
 		}
 
-		margin-bottom: 1em;
-	}
+		a.see-more {
+			@extend .small-2;
+			@extend .columns;
+			@extend .text-right;
 
-	.social {
-		@extend .small-12;
-		@extend .large-3;
-		@extend .large-centered;
-		@extend .columns;
-	}
-
-	blockquote {
-		font-size: 1.25em;
-		padding: 2em 1.25em 1em;
-		font-style: italic;
-
-		.author {
-			display: block;
-			text-align: right;
-			font-style: normal;
+			font-family: $sans-serif;
+			font-size: 0.8em;
+			font-weight: 700;
+			line-height: 3.75em;
 			color: $dark;
-			font-size: 0.75em;
+		}
+
+		img {
+			@extend .small-6;
+			@extend .columns;
+			padding: 0 !important;
+		}
+	}
+
+	.score {
+		@extend .small-12;
+		@extend .text-center;
+		@extend .columns;
+
+		font-size: 3em;
+		padding-bottom: 0.5em;
+
+		.base {
+			font-size: 0.25em;
+			font-family: $sans-serif;
 		}
 	}
 }
 
 footer {
-	@extend .content-center;
-	@extend .text-right;
-	@include border-bottom-radius(1em);
+	@extend .row;
 
-	background: $dark;// $main-texture;
 	color: $light;
-	margin-bottom: 3em !important;
-	padding: 0.75em 0;
+	background: $dark;
+	padding: 1em 0;
 
-	span.copyright {
-		font-family: $sans-serif;
-		margin-right: 1em;
-	}
+	#contact {
+		a {
+			@extend .large-4;
+			@extend .columns;
+			@extend .text-center;
+
+			color: $light;
+			font-family: $accent-font;
+			letter-spacing: 0.33em;
+		}
+	}	
 }

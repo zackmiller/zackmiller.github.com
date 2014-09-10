@@ -1,0 +1,27 @@
+---
+layout: base
+---
+<div class="list content row">
+	{% for list in page.lists %}
+		<div class="small-12 {{ list.class }} columns">
+			<h3 class="list-title">{{ list.title }}</h3>
+			<div class="totem-force" 
+			{% if list.stack %}
+				data-totem-stack="{{ list.stack | join:',' }}"
+			{% endif %}
+			>
+			{% for item in list.entries %}
+				<img src="{{ site.url }}/img/{{ item.img }}" class="titem"/>
+				<h4 class="item-title">{{ item.title }}</h4>
+				<span class="item-rating">{{ item.rating }}</span>
+				<p class="item-text">{{ item.text }}</p>
+			{% endfor %}
+			</div>
+			{{ list.content | markdownify }}
+			<hr class="list-separator">
+		</div>
+	{% endfor %}
+	<div class="small-12 columns">
+		{{ page.content }}
+	</div>
+</div>

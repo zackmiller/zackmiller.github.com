@@ -1,26 +1,14 @@
 // Size
-$content-width: 90%;
+$content-width: 960px;
 
 // Colors
-$light: #FCFFF6;
-$dark: #665842;
-$primary-light: #FF9966;
-$primary-dark: #CC6633;
-$accent: #66CC99;
-
-// Images
-$background-texture: url(http://www.transparenttextures.com/patterns/swirl.png);
-$main-texture: 0;//url(http://www.transparenttextures.com/patterns/groovepaper.png);
+$light: #FAFAFA;
+$dark: #000515;
+$accent-color: pink;
 
 // Typography
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
-//Lustria
-@import url(http://fonts.googleapis.com/css?family=Lustria);
-//Merriweather
-//Noticia Text
-//Sanchez
-//Quattrocento
+@import url(http://fonts.googleapis.com/css?family=Questrial|Lato:100,300|Vollkorn);
 
-
-$sans-serif: 'Poiret One', 'Helvetica', Helvetica, Arial, sans-serif;
-$serif: 'Lustria', 'Georgia', serif;
+$sans-serif: 'Lato', 'Helvetica', Helvetica, Arial, sans-serif;
+$serif: 'Vollkorn', 'Georgia', serif;
+$accent-font: 'Questrial', $sans-serif;

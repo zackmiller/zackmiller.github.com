@@ -1,0 +1,30 @@
+<header>
+  <img src="{{ site.url }}/img/{{ page.photo.src }}.jpg">
+  {% if page.no-pill %}
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+    <h2>
+    {% if page.home %}
+      <a href="mailto:zack@zackmiller.ca">zack@zackmiller.ca</a>
+    {% else %}
+      <a href="{{ site.url }}">zackmiller.ca</a>
+    {% endif %}
+    </h2>
+  {% else %}
+    <aside class="attribution" aria-hidden="true" style="color: #{{ page.photo.text-color }};">
+      <span class="title">{{ page.photo.title }}</span>
+      <span class="artist">{{ page.photo.artist }}</span>
+    </aside>
+    <section class="pill">
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.subtitle }}</h2>
+      <h2>
+      {% if page.home %}
+        <a href="mailto:zack@zackmiller.ca">zack@zackmiller.ca</a>
+      {% else %}
+        <a href="{{ site.url }}">zackmiller.ca</a>
+      {% endif %}
+      </h2>
+    </section>
+  {% endif %}
+</header>

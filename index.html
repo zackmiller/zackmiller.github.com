@@ -1,46 +1,36 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Charli Wheaton</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <section class="lotus"></section>
-    <header>
-      <h1>
-        <span class="header1">Charli</span>
-        <span class="header2">Wheaton</span>
-      </h1>
-    </header>
-    <nav>
-      <ul class="tabs row-collapse text-center">
-        <li class="tab-title active"><a>About Me</a></li>
-        <li class="tab-title"><a href="./coaching/">Yoga Life Coaching</a></li>
-        <li class="tab-title"><a href="./contact/">Connect With Me</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="small-12 large-6 columns">
-        <h2>About Me</h2>
-        <p>I am an Associate Yoga Life Coach with training from Wild Abundant Life and am based in Halifax, Nova Scotia. I help clients take action and achieve personal growth as part of leading a positive, self-driven life.</p>
-        <p>I am currently enrolled in a 200 hour yoga teacher training program and plan to teach restorative and yin yoga.</p>
-        <p>I also have a Bachelor of Science in Psychology and am pursuing training in Art Therapy.</p>
-        <p>My many interests support my goal of helping clients recognize their personal power. I hope to reach individuals who feel stuck, stressed, or overwhelmed and inspire them to discover the life they’ve always dreamed about.</p>
-        <blockquote>"There is a bit of happiness in simply wanting happiness"<span class="author">- Jacques Demy</span></blockquote>
-      </section>
-      <section class="small-12 large-6 columns text-center">
-        <img src="img/charli.jpg" />
-      </section>
-    </main>
-    <footer>
-      <span class="copyright">&copy; 2014 Charli Wheaton</span>
-    </footer>
+---
+layout: base
+home: true
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+photo: 
+   src: blue-ruin
+   title: BLUE RUIN
+   artist: JEREMY SAULNIER
+   text-color: F1BE2A
+title: ZACK MILLER
+subtitle: Professional Software Developer | Aspiring Film Critic
+---
+
+<section id="bio">
+  <p>I'm a web developer in Halifax, Nova Scotia. I lead a team that collaborates with researchers at the IWK Health Centre and beyond to improve the quality of technology in personal health care.</p>
+  <p>After deciding to turn my film addiction from procrastination to productivity, I became a contributor and the assistant editor at <a href="http://thefocuspull.com">The Focus Pull Film Journal</a>.</p>
+  <p>I'm always looking for new experiences. If you're looking for someone to hack at your latest software project, ramble aimlessly about cinema, or you just want to chat, you can track me down via <a href="mailto:zack@zackmiller.ca">e-mail</a> or <a href="http://twitter.com/zzackmiller">Twitter</a>.</p>
+</section>
+<section id="film" class="grid">
+  <h3 class="grid-title">FILM</h3>
+  <a href="#" class="see-more">more</a>
+  {% for post in site.categories.movies limit:4 %}
+    <a href="{{ site.url }}{{ post.url }}">
+        <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
+    </a>
+  {% endfor %}
+</section>
+<section id="projects" class="grid">
+  <h3 class="grid-title">PROJECTS</h3>
+  <a href="#" class="see-more">more</a>
+  {% for post in site.categories.projects limit:4 %}
+    <a href="{{ site.url }}{{ post.url }}">
+        <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
+    </a>
+  {% endfor %}
+</section>
