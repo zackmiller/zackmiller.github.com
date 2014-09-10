@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Questrial|Lato:100,300|Vollkorn);
-/* line 11, ../scss/_theme.scss */
+/* line 3, ../scss/_theme.scss */
+html {
+  background: #fafafa;
+}
+
+/* line 15, ../scss/_theme.scss */
 header .attribution {
   position: absolute;
   top: 0.25em;
@@ -10,18 +15,18 @@ header .attribution {
   line-height: 1;
   max-width: 25%;
 }
-/* line 20, ../scss/_theme.scss */
+/* line 24, ../scss/_theme.scss */
 header .attribution .title {
   font-family: "Questrial", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
   display: block;
 }
-/* line 24, ../scss/_theme.scss */
+/* line 28, ../scss/_theme.scss */
 header .attribution .artist {
   font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
   font-weight: 100;
 }
-/* line 32, ../scss/_theme.scss */
+/* line 36, ../scss/_theme.scss */
 header .pill {
   -moz-border-radius: 2.5em;
   -webkit-border-radius: 2.5em;
@@ -35,39 +40,39 @@ header .pill {
   padding: 0.45em;
 }
 @media only screen and (max-width: 40em) {
-  /* line 32, ../scss/_theme.scss */
+  /* line 36, ../scss/_theme.scss */
   header .pill {
     margin: -2.5em auto 0.25em;
   }
 }
-/* line 48, ../scss/_theme.scss */
+/* line 52, ../scss/_theme.scss */
 header h1 {
   letter-spacing: 0.45em;
   margin-right: -0.45em;
   font-family: "Questrial", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 54, ../scss/_theme.scss */
+/* line 58, ../scss/_theme.scss */
 header h2 {
   font-size: 1.1em;
 }
-/* line 58, ../scss/_theme.scss */
+/* line 62, ../scss/_theme.scss */
 header a {
   color: #000515;
 }
 
-/* line 63, ../scss/_theme.scss */
+/* line 67, ../scss/_theme.scss */
 main {
   padding: 0.8em;
 }
-/* line 71, ../scss/_theme.scss */
+/* line 75, ../scss/_theme.scss */
 main section p:last-child {
   margin-bottom: 1em;
 }
-/* line 76, ../scss/_theme.scss */
+/* line 80, ../scss/_theme.scss */
 main .grid {
   margin-bottom: 1.5em;
 }
-/* line 87, ../scss/_theme.scss */
+/* line 91, ../scss/_theme.scss */
 main .grid a.see-more {
   font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
@@ -75,28 +80,28 @@ main .grid a.see-more {
   line-height: 3.75em;
   color: #000515;
 }
-/* line 99, ../scss/_theme.scss */
+/* line 103, ../scss/_theme.scss */
 main .grid img {
   padding: 0 !important;
 }
-/* line 106, ../scss/_theme.scss */
+/* line 110, ../scss/_theme.scss */
 main .score {
   font-size: 3em;
   padding-bottom: 0.5em;
 }
-/* line 114, ../scss/_theme.scss */
+/* line 118, ../scss/_theme.scss */
 main .score .base {
   font-size: 0.25em;
   font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 121, ../scss/_theme.scss */
+/* line 125, ../scss/_theme.scss */
 footer {
   color: #fafafa;
   background: #000515;
   padding: 1em 0;
 }
-/* line 129, ../scss/_theme.scss */
+/* line 133, ../scss/_theme.scss */
 footer #contact a {
   color: #fafafa;
   font-family: "Questrial", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
