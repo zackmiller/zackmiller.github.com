@@ -62,13 +62,11 @@ header {
 
 main {
 	@extend .row;
-	padding: 0.8em;
 
-	section {
-		@extend .small-12;
-		@extend .columns;
+	section:not(.grid) {
+		@extend .row;
+		padding: 0.8em;
 
-		background: $light;
 		p:last-child {
 			margin-bottom: 1em;
 		}

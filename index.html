@@ -16,21 +16,23 @@ subtitle: Professional Software Developer | Aspiring Film Critic
   <p>After deciding to turn my film addiction from procrastination to productivity, I became a contributor and the assistant editor at <a href="http://thefocuspull.com">The Focus Pull Film Journal</a>.</p>
   <p>I'm always looking for new experiences. If you're looking for someone to hack at your latest software project, ramble aimlessly about cinema, or you just want to chat, you can track me down via <a href="mailto:zack@zackmiller.ca">e-mail</a> or <a href="http://twitter.com/zzackmiller">Twitter</a>.</p>
 </section>
-<section id="film" class="grid">
-  <h3 class="grid-title">FILM</h3>
-  <a href="#" class="see-more">more</a>
-  {% for post in site.categories.movies limit:4 %}
-    <a href="{{ site.url }}{{ post.url }}">
-        <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
-    </a>
-  {% endfor %}
-</section>
-<section id="projects" class="grid">
-  <h3 class="grid-title">PROJECTS</h3>
-  <a href="#" class="see-more">more</a>
-  {% for post in site.categories.projects limit:4 %}
-    <a href="{{ site.url }}{{ post.url }}">
-        <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
-    </a>
-  {% endfor %}
+<section id="links">
+  <section id="film" class="grid">
+    <h3 class="grid-title">FILM</h3>
+    <a href="#" class="see-more">more</a>
+    {% for post in site.categories.movies limit:4 %}
+      <a href="{{ site.url }}{{ post.url }}">
+          <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
+      </a>
+    {% endfor %}
+  </section>
+  <section id="projects" class="grid">
+    <h3 class="grid-title">PROJECTS</h3>
+    <a href="#" class="see-more">more</a>
+    {% for post in site.categories.projects limit:4 %}
+      <a href="{{ site.url }}{{ post.url }}">
+          <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
+      </a>
+    {% endfor %}
+  </section>
 </section>
