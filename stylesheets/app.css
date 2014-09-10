@@ -66,8 +66,9 @@ main section:not(.grid) p:last-child {
 /* line 75, ../scss/_theme.scss */
 main .grid {
   margin-bottom: 1.5em;
+  padding: 0.8em;
 }
-/* line 86, ../scss/_theme.scss */
+/* line 87, ../scss/_theme.scss */
 main .grid a.see-more {
   font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
@@ -75,11 +76,11 @@ main .grid a.see-more {
   line-height: 3.75em;
   color: #000515;
 }
-/* line 98, ../scss/_theme.scss */
+/* line 99, ../scss/_theme.scss */
 main .grid img {
   padding: 0 !important;
 }
-/* line 105, ../scss/_theme.scss */
+/* line 106, ../scss/_theme.scss */
 main .score {
   font-size: 3em;
   padding-bottom: 0.5em;
