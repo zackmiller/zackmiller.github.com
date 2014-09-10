@@ -103,9 +103,9 @@ main {
 	}
 
 	.score {
-		@extend .small-12;
+		//@extend .small-12;
 		@extend .text-center;
-		@extend .columns;
+		@extend .row;
 
 		font-size: 3em;
 		padding-bottom: 0.5em;
