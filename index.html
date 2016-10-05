@@ -12,27 +12,7 @@ subtitle: Professional Software Developer | Aspiring Film Critic
 ---
 
 <section id="bio">
-  <p>I'm a web developer in Halifax, Nova Scotia. I lead a team that collaborates with researchers at the IWK Health Centre and beyond to improve the quality of technology in personal health care.</p>
-  <p>After deciding to turn my film addiction from procrastination to productivity, I became a contributor and the assistant editor at <a href="http://thefocuspull.com">The Focus Pull Film Journal</a>.</p>
+  <p>I'm a software developer in Halifax, Nova Scotia. I use Python to discover, decode, and deliver insights on over 30 years of professional sports data.</p>
+  <p>My spare time is spent at the movies, whether in my capacity as a film programmer at <a href="http://carbonarc.ca">Halifax's only independent arthouse cinema</a> or writing for various publications like <a href="http://thefocuspull.com">The Focus Pull Film Journal</a>, <a href="http://photogenie.be">Photogénie</a>, <a href="http://cinemascandinavia.com/">Cinema Scandinavia</a>, and <a href="http://shelfheroes.com/">Shelf Heroes</a>.</p>
   <p>I'm always looking for new experiences. If you're looking for someone to hack at your latest software project, ramble aimlessly about cinema, or you just want to chat, you can track me down via <a href="mailto:zack@zackmiller.ca">e-mail</a> or <a href="http://twitter.com/zzackmiller">Twitter</a>.</p>
-</section>
-<section id="links">
-  <section id="film" class="grid">
-    <h3 class="grid-title">FILM</h3>
-    <a href="#" class="see-more">more</a>
-    {% for post in site.categories.movies limit:4 %}
-      <a href="{{ site.url }}{{ post.url }}">
-          <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
-      </a>
-    {% endfor %}
-  </section>
-  <section id="projects" class="grid">
-    <h3 class="grid-title">PROJECTS</h3>
-    <a href="#" class="see-more">more</a>
-    {% for post in site.categories.projects limit:4 %}
-      <a href="{{ site.url }}{{ post.url }}">
-          <img src="{{ site.url }}/img/{{ post.photo.src }}-thumb.jpg">  
-      </a>
-    {% endfor %}
-  </section>
 </section>
